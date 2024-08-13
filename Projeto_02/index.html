@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calucladora IMC</h2>
+    <form onsubmit="return printarImc()">
+        <label for="peso">
+            Peso:<br><input type="number" name="peso" id="peso">
+        </label>
+        <br>
+        <br>
+        <label for="altura">
+            Altura:<br><input type="number" name="altura" id="altura" step="0.01">
+        </label>
+        <br>
+        <br>
+        <input type="submit" name="Submit">
+    </form>
+    <br>
+
+    <h2>Conversor Temperatura</h2>
+    <form onsubmit="return printarTemperatura()">
+        <label for="temperatura">
+            Temperatura:<br><input type="number" name="temperatura" id="temperatura" step="0.1">
+        </label>
+        <br>
+        <br>
+        <label for="origem">
+            Origem:<br>
+            <select name="origem" id="origem">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label for="destino">
+            Destino:<br>
+            <select name="destino" id="destino">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <input type="submit" name="Converter">
+    </form>
+    <br>
+
+    <h2>Gerador Números</h2>
+    <form onsubmit="return printarNumeros()">
+        <label for="quantidade">
+            Quantidade de números:<br>
+            <input type="number" name="quantidade" id="quantidade">
+        </label>
+        <br>
+        <br>
+        <input type="submit" name="Gerar">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
